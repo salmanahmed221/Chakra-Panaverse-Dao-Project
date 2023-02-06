@@ -10,7 +10,7 @@ import {
 export default function Data3() {
   return (
     <Box>
-      <Accordion>
+      <Accordion defaultIndex={[1]} allowMultiple>
         <AccordionItem>
           <h2>
             <AccordionButton>

@@ -11,14 +11,12 @@ import {
 export default function Data1() {
   return (
     <Box className="container">
-      <Accordion>
+      <Accordion defaultIndex={[1]} allowMultiple>
         <AccordionItem>
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
-                <Text fontWeight={"bold"}>
-                   Quarter I (Core)
-                </Text>
+                <Text fontWeight={"bold"}>Quarter I (Core)</Text>
               </Box>
               <AccordionIcon />
             </AccordionButton>
