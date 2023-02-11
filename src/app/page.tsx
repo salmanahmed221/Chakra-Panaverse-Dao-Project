@@ -1,6 +1,7 @@
 "use client";
 
 import { Data1, Data2, Data3, Display, Navigation } from "@/components";
+import Footer from "@/components/Footer";
 import { VStack } from "@chakra-ui/react";
 
 export default function page() {
@@ -11,6 +12,7 @@ export default function page() {
       <Data1 />
       <Data2 />
       <Data3 />
+      <Footer />
     </VStack>
   );
 }
