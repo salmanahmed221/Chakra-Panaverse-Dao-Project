@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <Box w="full" bg="#ebffff">
       <HStack justify="space-between" mx="2 ">
-        <Image src={"/without.png"} alt="/" height={100} width={100} />
+        <Image src={"/fulllogo.png"} alt="/" height={120} width={120} />
 
         <HStack
           spacing="16"

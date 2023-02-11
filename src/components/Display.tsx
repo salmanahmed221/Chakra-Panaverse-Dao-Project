@@ -64,7 +64,6 @@ export default function Display() {
         <HStack
           as={motion.div}
           animate={{
-            // x: [0, 100, 0],
             scale: [1, 1, 0, 1],
             transition: {
               duration: 5,
