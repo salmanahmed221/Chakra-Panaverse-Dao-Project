@@ -3,25 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Heading, Box, Text, Flex, HStack, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "framer/motion";
 
-const sentence = {
-  hidden: { opacity: 1 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.5,
-      staggerChildren: 0.06,
-    },
-  },
-};
-const letter = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-};
 const line1 = " Certified Web 3.0 and Metaverse Developer  ";
 const line2 = " Version 6.0.0 - March 2023 ";
 const line3 = " The Program in a Nutshell: Earn While You Learn ";
@@ -34,7 +16,6 @@ export default function Display() {
       w="full"
       textAlign="center"
       as={motion.div}
-      variants={staggerContainer}
       viewport={{ once: false, amount: 0.25 }}
       initial="hidden"
       whileInView="show"
@@ -42,7 +23,6 @@ export default function Display() {
       <Text
         mb="8"
         as={motion.div}
-        variants={sentence}
         initial="hidden"
         animate="visible"
         fontSize={["22px", "20px", "46px", "46px"]}
@@ -50,9 +30,7 @@ export default function Display() {
         mx="2"
       >
         {line1.split("").map((char, index) => (
-          <motion.span key={index} variants={letter}>
-            {char}
-          </motion.span>
+          <motion.span key={index}>{char}</motion.span>
         ))}
       </Text>
 
@@ -63,7 +41,6 @@ export default function Display() {
         <VStack mx="10" maxW={["90%", "70%", "70%", "70%", "40%"]} my="20">
           <Text
             as={motion.div}
-            variants={fadeIn("up", "tween", 0.2, 1)}
             textAlign="start"
             fontSize={["16px", "24px", "24px", "32px", "32px"]}
           >
@@ -104,21 +81,17 @@ export default function Display() {
         mt="40"
         mb="8"
         as={motion.div}
-        variants={sentence}
         initial="hidden"
         animate="visible"
         fontSize={["22px", "20px", "46px", "46px"]}
         textColor=" white"
       >
         {line2.split("").map((char, index) => (
-          <motion.span key={index} variants={letter}>
-            {char}
-          </motion.span>
+          <motion.span key={index}>{char}</motion.span>
         ))}
       </Text>
       <Text
         as={motion.div}
-        variants={fadeIn("up", "tween", 0.2, 1)}
         fontSize={["16px", "24px", "24px", "32px", "32px"]}
         mx="auto"
         maxW={["90%", "90%", "90%", "70%", "50%"]}
@@ -150,22 +123,18 @@ export default function Display() {
         mt="40"
         mb="8"
         as={motion.div}
-        variants={sentence}
         initial="hidden"
         animate="visible"
         fontSize={["22px", "20px", "46px", "46px"]}
         textColor=" white"
       >
         {line3.split("").map((char, index) => (
-          <motion.span key={index} variants={letter}>
-            {char}
-          </motion.span>
+          <motion.span key={index}>{char}</motion.span>
         ))}
       </Text>
 
       <Text
         as={motion.div}
-        variants={fadeIn("up", "tween", 0.2, 1)}
         fontSize={["16px", "24px", "24px", "32px", "32px"]}
         mx="auto"
         maxW={["90%", "90%", "90%", "70%", "50%"]}
@@ -179,16 +148,13 @@ export default function Display() {
       <Text
         mt="40"
         as={motion.div}
-        variants={sentence}
         initial="hidden"
         animate="visible"
         fontSize={["22px", "20px", "46px", "46px"]}
         textColor=" white"
       >
         {line4.split("").map((char, index) => (
-          <motion.span key={index} variants={letter}>
-            {char}
-          </motion.span>
+          <motion.span key={index}>{char}</motion.span>
         ))}
       </Text>
 
@@ -201,7 +167,6 @@ export default function Display() {
         <VStack mx="auto" maxW={["90%", "70%", "70%", "70%", "40%"]} my="20">
           <Text
             as={motion.div}
-            variants={fadeIn("up", "tween", 0.2, 1)}
             textAlign="center"
             fontSize={["16px", "24px", "24px", "30px", "24px"]}
           >
@@ -228,22 +193,18 @@ export default function Display() {
         mt="40"
         mb="8"
         as={motion.div}
-        variants={sentence}
         initial="hidden"
         animate="visible"
         fontSize={["22px", "20px", "46px", "46px"]}
         textColor=" white"
       >
         {line5.split("").map((char, index) => (
-          <motion.span key={index} variants={letter}>
-            {char}
-          </motion.span>
+          <motion.span key={index}>{char}</motion.span>
         ))}
       </Text>
 
       <Text
         as={motion.div}
-        variants={fadeIn("up", "tween", 0.2, 1)}
         textAlign="center"
         fontSize={["16px", "24px", "24px", "30px", "24px"]}
       >
