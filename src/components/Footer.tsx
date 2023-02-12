@@ -2,7 +2,7 @@ import { Box, Grid, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 export default function Footer() {
   return (
     <SimpleGrid
-      templateColumns={{ lg: "repeat(3, 1fr)", base: "repeat(2, 1fr)" }}
+      templateColumns={{ lg: "repeat(3, 1fr)", base: "repeat(1, 1fr)" }}
       bg="#ebffff"
       maxW={1400}
       columnGap="30px"

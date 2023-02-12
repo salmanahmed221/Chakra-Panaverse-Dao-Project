@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Container, Text } from "@chakra-ui/react";
 import {
   Accordion,
   AccordionItem,
@@ -10,7 +10,7 @@ import {
 
 export default function Data2() {
   return (
-    <Box>
+    <Container>
       <Accordion defaultIndex={[1]} allowMultiple>
         <AccordionItem>
           <h2>
@@ -32,7 +32,7 @@ export default function Data2() {
               </b>
             </Text>
             <Text>Duration: 13 Weeks</Text>
-            <Text style={{ float: "left" }}>
+            <Text mt="10px" style={{ float: "left" }}>
               <b> Course Description: </b>
             </Text>
             <br />
@@ -47,21 +47,7 @@ export default function Data2() {
               (postgreSQL Compatible), AWS Serverless Technologies, and Cloud
               Development Kit for Terraform (CDKTF).
             </Text>
-            <br />
-            <br />
-            <Text style={{ float: "left" }}>
-              <br />
-              <mark>
-                <b>Course Outline: </b>
-              </mark>
-              <br /> 
-            </Text>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <Text style={{ float: "left" }}>
+            <Text mt="15px" style={{ float: "left" }}>
               <b>1. Next.js 13 Web Development</b>
             </Text>
             <br />
@@ -474,6 +460,6 @@ export default function Data2() {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-    </Box>
+    </Container>
   );
 }

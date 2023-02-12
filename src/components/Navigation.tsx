@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, HStack } from "@chakra-ui/react";
+import { Avatar, Box, Button, HStack } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +21,6 @@ const Navigation = () => {
             title="Click to Visit"
           >
             <Button
-              mr="10px"
               px={{ base: "6", lg: "10" }}
               borderRadius="20"
               variant="unstyled"
@@ -30,6 +29,12 @@ const Navigation = () => {
               Apply
             </Button>
           </Link>
+          <Box>
+            <Avatar
+              name="Dan Abrahmov"
+              src="/businessman-character-avatar-isolated_24877-60111.avif"
+            />
+          </Box>
         </HStack>
       </HStack>
     </Box>

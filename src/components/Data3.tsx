@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Container, Text } from "@chakra-ui/react";
 import {
   Accordion,
   AccordionItem,
@@ -9,7 +9,7 @@ import {
 
 export default function Data3() {
   return (
-    <Box>
+    <Container>
       <Accordion defaultIndex={[1]} allowMultiple>
         <AccordionItem>
           <h2>
@@ -63,6 +63,6 @@ export default function Data3() {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-    </Box>
+    </Container>
   );
 }
