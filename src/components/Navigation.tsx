@@ -1,6 +1,17 @@
 "use client";
 
-import { Avatar, Box, Button, HStack } from "@chakra-ui/react";
+import {
+  Avatar,
+  Box,
+  Button,
+  HStack,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,7 +40,7 @@ const Navigation = () => {
               Apply
             </Button>
           </Link>
-          <Box>
+          <Box display={{ lg: "initial", base: "none" }}>
             <Avatar
               name="Dan Abrahmov"
               src="/businessman-character-avatar-isolated_24877-60111.avif"
