@@ -41,7 +41,7 @@ export default function Display() {
         <VStack mx="10" maxW={["90%", "70%", "70%", "70%", "40%"]} my="20">
           <Text
             as={motion.div}
-            textAlign="start"
+            textAlign="justify"
             fontSize={["16px", "24px", "24px", "32px", "32px"]}
           >
             A One and Quarter Years Panaverse DAO Earn as you Learn Program
@@ -94,6 +94,7 @@ export default function Display() {
         fontSize={["16px", "24px", "24px", "32px", "32px"]}
         mx="auto"
         maxW={["90%", "90%", "90%", "70%", "50%"]}
+        textAlign="justify"
       >
         The internet is without a doubt the most important technological
         development in human history. Web3, 3D Metaverse, AI, IoT, Cloud, and
@@ -137,6 +138,7 @@ export default function Display() {
         fontSize={["16px", "24px", "24px", "32px", "32px"]}
         mx="auto"
         maxW={["90%", "90%", "90%", "70%", "50%"]}
+        textAlign={"justify"}
       >
         In this brand-new type of curriculum, students will learn how to make
         money and boost exports in the classroom and will begin doing so within
@@ -166,7 +168,7 @@ export default function Display() {
         <VStack mx="auto" maxW={["90%", "70%", "70%", "70%", "40%"]} my="20">
           <Text
             as={motion.div}
-            textAlign="center"
+            textAlign="justify"
             fontSize={["16px", "24px", "24px", "30px", "24px"]}
           >
             This curriculum is intended for beginners who want to learn software
